@@ -32,5 +32,18 @@ int main() {
 
     printf("修改后: 姓名: %s, 年龄: %d, 分数: %.1f\n", p->name, p->age, p->score);
 
+
+
+    //定义一个三个学生的结构体
+    struct Student class1[3];
+    class1[0].age = 18;
+    class1[1].age = 19;
+    class1[2].age = 20;
+
+    //遍历这个数组，使他们的年龄打印到控制台
+    for (int i = 0;i < 3;i++) {
+        printf("第 %d 的年龄是 %d\n",i,class1[i].age);
+    }
+
     return 0;
 }
